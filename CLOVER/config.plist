@@ -205,13 +205,19 @@
 				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>PtidDevc</string>
+			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<false/>
 		<key>FixMCFG</key>
 		<false/>
 		<key>HaltEnabler</key>
-		<true/>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -240,7 +246,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -no_compat_check -v nv_disable=1</string>
+		<string>dart=0 -no_compat_check kext-dev-mode=1</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -270,11 +276,11 @@
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<integer>3</integer>
+			<integer>0</integer>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>InjectHDMI</key>
 		<false/>
@@ -305,13 +311,13 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>HighCurrent</key>
 			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -331,6 +337,8 @@
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1366x768</string>
 		<key>Theme</key>
 		<string>Neon</string>
 	</dict>
